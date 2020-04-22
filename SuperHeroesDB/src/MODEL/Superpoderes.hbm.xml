@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-abr-2020 20:14:56 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="MODEL.Superpoderes" table="superpoderes" catalog="newsuperheroes" optimistic-lock="version">
+        <id name="idSuperpoder" type="java.lang.Integer">
+            <column name="id_superpoder" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="superheroes" class="MODEL.Superheroes" fetch="select">
+            <column name="id_superheroe" not-null="true" />
+        </many-to-one>
+        <property name="nomPoder" type="string">
+            <column name="nom_poder" length="50" not-null="true" />
+        </property>
+        <property name="danio" type="int">
+            <column name="danio" not-null="true" />
+        </property>
+        <property name="potencia" type="int">
+            <column name="potencia" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

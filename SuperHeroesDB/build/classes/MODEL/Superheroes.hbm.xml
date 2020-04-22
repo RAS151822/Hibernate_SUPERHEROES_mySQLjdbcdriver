@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-abr-2020 20:14:56 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="MODEL.Superheroes" table="superheroes" catalog="newsuperheroes" optimistic-lock="version">
+        <id name="idSuperheroe" type="java.lang.Integer">
+            <column name="id_superheroe" />
+            <generator class="identity" />
+        </id>
+        <property name="nomSuperheroe" type="string">
+            <column name="nom_superheroe" length="50" not-null="true" />
+        </property>
+        <property name="habilidad" type="string">
+            <column name="habilidad" length="50" not-null="true" />
+        </property>
+        <property name="capa" type="java.lang.Boolean">
+            <column name="capa" />
+        </property>
+        <property name="genero" type="char">
+            <column name="genero" length="1" not-null="true" />
+        </property>
+        <set name="villanoses" table="villanos" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_superheroe" not-null="true" />
+            </key>
+            <one-to-many class="MODEL.Villanos" />
+        </set>
+        <set name="superpodereses" table="superpoderes" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_superheroe" not-null="true" />
+            </key>
+            <one-to-many class="MODEL.Superpoderes" />
+        </set>
+    </class>
+</hibernate-mapping>
