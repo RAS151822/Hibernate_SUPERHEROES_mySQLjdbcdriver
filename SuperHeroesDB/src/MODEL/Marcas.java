@@ -18,6 +18,14 @@ public class Marcas  implements java.io.Serializable {
     public Marcas() {
     }
 
+    public Marcas(Integer idMarca, String nomMarca, int anioCreacion, Boolean pelicula) {
+        this.idMarca = idMarca;
+        this.nomMarca = nomMarca;
+        this.anioCreacion = anioCreacion;
+        this.pelicula = pelicula;
+    }
+
+       
 	
     public Marcas(Villanos villanos, String nomMarca, int anioCreacion) {
         this.villanos = villanos;

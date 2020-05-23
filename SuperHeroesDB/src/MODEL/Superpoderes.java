@@ -18,6 +18,15 @@ public class Superpoderes  implements java.io.Serializable {
     public Superpoderes() {
     }
 
+    public Superpoderes(Integer idSuperpoder, String nomPoder, int danio, int potencia) {
+        this.idSuperpoder = idSuperpoder;
+        this.nomPoder = nomPoder;
+        this.danio = danio;
+        this.potencia = potencia;
+    }
+    
+    
+
     public Superpoderes(Superheroes superheroes, String nomPoder, int danio, int potencia) {
        this.superheroes = superheroes;
        this.nomPoder = nomPoder;

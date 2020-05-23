@@ -337,8 +337,9 @@ public class VISTA extends javax.swing.JFrame {
      //LLENAR COMBOBOX SUPERPODERES Y VILLANOS DENTRO DE SUPERHEROES
      public void LlenarComboBoxSuperHeroes(){
          
+        
          seleccion = TablaSuperHeroes.getSelectedRow();
-         
+          seleccion = 1;
          jComboBoxSuperHeroesSuperPoderes.removeAllItems();
          jComboBoxSuperHeroesVillanos.removeAllItems();
         
@@ -1523,11 +1524,9 @@ public class VISTA extends javax.swing.JFrame {
                                 .addComponent(TextFieldMarcaAño, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(114, 114, 114)
                                 .addComponent(jComboBoxMarcas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jButtonMarcaCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(575, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMarcaLayout.createSequentialGroup()
-                        .addComponent(TextFieldMarcaPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(jButtonMarcaCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(TextFieldMarcaPelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMarcaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 1020, Short.MAX_VALUE)

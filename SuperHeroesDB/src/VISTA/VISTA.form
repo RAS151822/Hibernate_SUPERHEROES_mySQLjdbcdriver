@@ -1225,13 +1225,10 @@
                                   </Group>
                                   <Component id="jButtonMarcaCancelar" min="-2" pref="132" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="575" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="TextFieldMarcaPelicula" min="-2" pref="59" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
+                          <Component id="TextFieldMarcaPelicula" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>

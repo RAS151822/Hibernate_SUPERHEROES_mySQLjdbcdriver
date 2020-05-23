@@ -22,6 +22,16 @@ public class Villanos  implements java.io.Serializable {
     public Villanos() {
     }
 
+    public Villanos(Integer idVillano, String nomVillano, String habilidad, Boolean capa, char genero) {
+        this.idVillano = idVillano;
+        this.nomVillano = nomVillano;
+        this.habilidad = habilidad;
+        this.capa = capa;
+        this.genero = genero;
+    }
+    
+    
+
 	
     public Villanos(Superheroes superheroes, String nomVillano, char genero) {
         this.superheroes = superheroes;

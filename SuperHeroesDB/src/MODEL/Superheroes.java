@@ -23,10 +23,11 @@ public class Superheroes  implements java.io.Serializable {
     }
 
 	
-    public Superheroes(String nomSuperheroe, String habilidad, char genero) {
+    public Superheroes(String nomSuperheroe, String habilidad, char genero, Boolean capa) {
         this.nomSuperheroe = nomSuperheroe;
         this.habilidad = habilidad;
         this.genero = genero;
+        this.capa = capa;
         
     }
     public Superheroes(String nomSuperheroe, String habilidad, Boolean capa, char genero, Set villanoses, Set superpodereses) {
